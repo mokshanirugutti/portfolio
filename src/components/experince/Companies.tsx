@@ -81,10 +81,10 @@ export default function CompaniesComponent() {
         key="1"
         aria-label="Kamp Kode"
         startContent={<MonitorMobileIcon/>}
-        subtitle="Full Stack Intern, July -2024"
+        subtitle="Full Stack Intern, July-2024"
         title="KampKode"
       >
-        <li className="">Full-stack web applications designed and implemented using React, Typescript, and Tailwind CSS, increasing user engagement by 30%.</li>
+        <li className="">Full-stack web application designed and implemented using React, Typescript, and Tailwind CSS, increasing user engagement by 30%.</li>
         <li>Designed responsive and user-friendly interfaces using UI frameworks such as Aceternity UI and Magic UI.</li>
         <li>Collaborated with cross-functional teams to align UI/UX designs with product goals, ensuring on-time project delivery, resulting in a 95% satisfaction rating.</li>
 
@@ -93,7 +93,7 @@ export default function CompaniesComponent() {
         key="2"
         aria-label="FreeLance"
         startContent={<Code2Icon/>}
-        subtitle="Full Stack developer Feb-2024"
+        subtitle="Full Stack developer, Feb to March-2024"
         title="FreeLance"
         className="mt-3 md:mt-0"
       >

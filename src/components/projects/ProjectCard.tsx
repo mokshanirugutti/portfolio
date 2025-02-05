@@ -43,7 +43,7 @@ export default function ProjectCard({ title, techStack, gitLink, liveLink, descr
 
       <Modal isOpen={isOpen} onOpenChange={onClose} backdrop="blur" className="bg-black/10 backdrop-blur-lg text-white">
         <ModalContent>
-          <ModalHeader className="flex flex-col gap-1">More on project</ModalHeader>
+          <ModalHeader className="flex flex-col gap-1">More on {title}</ModalHeader>
           <ModalBody>
             {descriptionPoints.map((point, index) => (
               <p key={index}>{point}</p>
