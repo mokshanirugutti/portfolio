@@ -10,7 +10,10 @@ export default function HeroSection(){
                 {/* name and socials */}
 
                 <div className="flex justify-between items-center ">
-                    <h1 className=" text-2xl font-semibold tracking-wider my-1">MokshaNirugutti</h1>
+                    <div>
+                        <h1 className=" text-2xl font-semibold tracking-wider my-1">MokshaNirugutti</h1>
+                        <p className="text-sm font-light text-white/60 mb-1 ">Full Stack Developer</p>
+                    </div>
                     <div>
                         <ProfileLinks/>
                     </div>
