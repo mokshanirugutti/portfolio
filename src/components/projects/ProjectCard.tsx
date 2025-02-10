@@ -10,6 +10,7 @@ import {
 } from "@heroui/react";
 import Link from "next/link";
 import { IconBrandGithub } from "@tabler/icons-react";
+import { LinkPreview } from "../ui/link-preview";
 
 interface ProjectCardProps {
   title: string;
@@ -30,10 +31,12 @@ export default function ProjectCard({ title, techStack, gitLink, liveLink, descr
     <>
       <div className="border rounded-md px-3 py-2 w-56 hover:translate-y-1 transition duration-150 group hover:bg-black/20 hover:shadow-md">
         <div className="flex gap-1">
-          <h1 className="text-lg font-medium">{title}</h1>
+        <LinkPreview url={liveLink} className="text-lg font-medium text-white flex gap-1">
+          <h1 className="">{title}</h1>
           <div className="relative h-fit overflow-hidden cursor-pointer">
               <ArrowUpRight className="md:translate-y-full group-hover:-translate-y-0 transition-all duration-100 ease-out opacity-0 group-hover:opacity-100" onClick={onOpen}/>
           </div>
+        </LinkPreview>{" "}
         </div>
         <h1 className="mt-1 font-normal">TechStack</h1>
           <li className="text-sm font-light">{techStack.frontend}</li>

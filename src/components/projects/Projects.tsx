@@ -1,4 +1,5 @@
 import ProjectCard from "./ProjectCard";
+import AllProjects from "./AllProjects";
 
 const projects = [
     {
@@ -50,7 +51,11 @@ const projects = [
 export default function Projects() {
     return (
         <div className="mx-auto w-full  ">
+          <div className="flex justify-between mb-2" >
             <h1 className="pb-2 text-xl tracking-wide">Projects....</h1>
+            <AllProjects/>
+          </div>
+
             <div className="flex gap-6 md:gap-3 md:flex-row flex-col mx-auto w-fit md:w-full">
                 {projects.map((project, index) => (
                     <ProjectCard 
