@@ -1,6 +1,7 @@
 "use client"
 
 import HeroSection from "@/components/hero/HeroSection";
+import Overlay from "@/components/Overlay";
 import {HeroUIProvider} from "@heroui/react";
 import Image from "next/image";
 
@@ -12,8 +13,10 @@ export default function Home() {
       <Image src='/circle-scatter-haikei.svg' className="z-10  absolute top-0" alt="" fill/>
       <div className="z-30 relative">
         <HeroSection />
+        <div className="absolute top-0">
+        <Overlay/>
+        </div>
       </div>
-      
     </div>
     </HeroUIProvider>
   );

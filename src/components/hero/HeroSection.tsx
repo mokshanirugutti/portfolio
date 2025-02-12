@@ -2,6 +2,7 @@ import Experience from "../experince/Experience";
 import Projects from "../projects/Projects";
 import { Separator } from "../ui/separator";
 import ProfileLinks from "./ProfileLinks";
+import {motion} from 'framer-motion'
 
 export default function HeroSection(){
     return (
@@ -21,14 +22,22 @@ export default function HeroSection(){
                 <Separator/>
                 
                 {/* experince  */}
-                <div>
+                <motion.div
+                initial={{opacity:0, scale:0.7}}
+                animate={{opacity:1, scale:1}}
+                transition={{duration:0.4,delay:2.5}}
+                >
                     <Experience/>
-                </div>
+                </motion.div>
 
                 {/* Projects*/}
-                <div>
+                <motion.div
+                initial={{opacity:0, x:50}}
+                animate={{opacity:1, x:0}}
+                transition={{duration:0.4, delay:3}}
+                >
                     <Projects/>
-                </div>
+                </motion.div>
 
             </div>
 
