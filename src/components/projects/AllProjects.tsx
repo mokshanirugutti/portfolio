@@ -64,7 +64,10 @@ export default function AllProjects() {
       }}
     >
       <DialogTrigger asChild>
-        <Button variant="outline" className="bg-white text-black ">View All</Button>
+        <div className="rounded-lg h-10 w-fit px-3 bg-white text-black py-2 group overflow-hidden font-medium text-center">
+          <h1 className="h-8 group-hover:-translate-y-full transition-all duration-150 ease-out">View All</h1>
+          <h1 className="h-8 group-hover:-translate-y-full transition-all duration-150 ease-out">View All</h1>
+        </div>
       </DialogTrigger>
       <DialogContent className="gap-0 p-0 [&>button:last-child]:text-white bg-transparent text-white backdrop-blur-xl">
         <div className="p-2">
