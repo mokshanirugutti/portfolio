@@ -13,7 +13,7 @@ export default function Home() {
       <Image src='/circle-scatter-haikei.svg' className="z-10  absolute top-0" alt="" fill/>
       <div className="z-30 relative">
         <HeroSection />
-        <div className="absolute top-0">
+        <div className="absolute top-0 -z-20">
         <Overlay/>
         </div>
       </div>

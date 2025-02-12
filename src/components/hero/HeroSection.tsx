@@ -9,6 +9,11 @@ export default function HeroSection(){
         <div className="pagePadding z-30 text-white py-5 poppins">
             <div className=" max-w-2xl mx-auto py-1 px-3">
                 {/* name and socials */}
+                <motion.div
+                initial={{opacity:0, y:-20}}
+                animate={{opacity:1, y:0}}
+                transition={{duration:0.3,delay:2.5}}
+                >
 
                 <div className="flex justify-between items-center ">
                     <div>
@@ -21,6 +26,7 @@ export default function HeroSection(){
                 </div>
                 <Separator/>
                 
+                </motion.div>
                 {/* experince  */}
                 <motion.div
                 initial={{opacity:0, scale:0.7}}
