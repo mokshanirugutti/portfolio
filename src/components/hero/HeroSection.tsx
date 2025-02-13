@@ -1,10 +1,12 @@
 import Experience from "../experince/Experience";
 import Projects from "../projects/Projects";
+import { FlipWords } from "../ui/flip-words";
 import { Separator } from "../ui/separator";
 import ProfileLinks from "./ProfileLinks";
 import {motion} from 'framer-motion'
 
 export default function HeroSection(){
+    const words = ["Full Stack Developer", "70WPM", "Mechanical Keyboards","HacktoberFest 2024",];
     return (
         <div className="pagePadding z-30 text-white py-5 poppins">
             <div className=" max-w-2xl mx-auto py-1 px-3">
@@ -18,7 +20,7 @@ export default function HeroSection(){
                 <div className="flex justify-between items-center ">
                     <div>
                         <h1 className=" text-2xl font-semibold tracking-wider my-1">MokshaNirugutti</h1>
-                        <p className="text-sm font-light text-white/60 mb-1 ">Full Stack Developer</p>
+                        <FlipWords words={words} className="text-sm font-light text-white/60 mb-1"/> 
                     </div>
                     <div>
                         <ProfileLinks/>
