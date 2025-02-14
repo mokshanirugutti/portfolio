@@ -23,12 +23,11 @@ export default function AllProjects() {
 
   const stepContent = [
     {
-      title: "Eventer",
-      description: "Built with React, TypeScript, Express, MongoDB to manage events. Allows users to create, update, and delete events. User can join attend event and attendes data will get updated realtime using websockets",
-      repo : "https://github.com/mokshanirugutti/eventManagementApp",
-      live : "https://litttleeeventts.netlify.app/",
-      image:"/eventer.webp"
-      
+      title: "Dictionary Book",
+      image:"/dictionaryBook.webp",
+      description:'A web application that allows users to search for words and get their definitions and examples. It also stores the search history. OTP based user authentication.',
+      repo: "https://github.com/mokshanirugutti/dictionary_book",
+      live: "https://dictionary-book-store.netlify.app/"
     },
     {
       title: "StudentBase",

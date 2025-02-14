@@ -3,18 +3,16 @@ import AllProjects from "./AllProjects";
 
 const projects = [
     {
-      title: "Dictionary Book",
+      title: "Eventer",
+      descriptionPoints:[ "Built with React, TypeScript, Express, MongoDB to manage events."," Allows users to create, update, and delete events.","User can join attend event and attendes data will get updated realtime using websockets","Allows user to chat with other users in real time."],
+      gitLink : "https://github.com/mokshanirugutti/eventManagementApp",
+      liveLink : "https://litttleeeventts.netlify.app/",
       techStack: {
         frontend: "React, TypeScript",
-        backend: "Python, Django",
-        other: "Docker, Api-Spec, postgresql"
+        backend: "Express, TypeScript",
+        other: "MongoDB"
       },
-      gitLink: "https://github.com/mokshanirugutti/dictionary_book",
-      liveLink: "https://dictionary-book-store.netlify.app/",
-      descriptionPoints: [
-        "Developed a robust web application using React for the front-end and Django for the back-end",
-        "This is a web application that allows users to search for words and get their definitions and examples. It also stores the search history. OTP based user authentication."
-      ]
+      
     },
     {
       title: "GrantsHunt",
