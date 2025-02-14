@@ -68,10 +68,10 @@ export default function AllProjects() {
           <h1 className="h-8 group-hover:-translate-y-full transition-all duration-150 ease-out">View All</h1>
         </div>
       </DialogTrigger>
-      <DialogContent className="gap-0 p-0 [&>button:last-child]:text-white bg-transparent text-white backdrop-blur-xl">
+      <DialogContent className="gap-0 p-0 [&>button:last-child]:text-white bg-transparent text-white backdrop-blur-xl w-96 ">
         <div className="p-2">
           <Image
-            className="w-full rounded-lg"
+            className="rounded-lg"
             src={stepContent[step - 1].image}
             width={402}
             height={236}
@@ -97,7 +97,7 @@ export default function AllProjects() {
               </Link>)
               }
             </div>
-            <DialogDescription>{stepContent[step - 1].description}</DialogDescription>
+            <DialogDescription className="text-start">{stepContent[step - 1].description}</DialogDescription>
           </DialogHeader>
           <div className="flex flex-col justify-between gap-4 sm:flex-row sm:items-center">
             <div className="flex justify-center space-x-1.5 max-sm:order-1">

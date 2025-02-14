@@ -34,9 +34,9 @@ export default function ProjectCard({ title, techStack, gitLink, liveLink, descr
         <LinkPreview url={liveLink} className="text-lg font-medium text-white flex gap-1">
           <h1 className="">{title}</h1>
           <div className="relative h-fit overflow-hidden cursor-pointer">
-              <ArrowUpRight className="md:translate-y-full group-hover:-translate-y-0 transition-all duration-100 ease-out opacity-0 group-hover:opacity-100" onClick={onOpen}/>
           </div>
         </LinkPreview>{" "}
+              <ArrowUpRight className="md:translate-y-full group-hover:-translate-y-0 transition-all duration-100 ease-out md:opacity-0 group-hover:opacity-100" onClick={onOpen}/>
         </div>
         <h1 className="mt-1 font-normal">TechStack</h1>
           <li className="text-sm font-light">{techStack.frontend}</li>
