@@ -23,8 +23,16 @@ export default function AllProjects() {
 
   const stepContent = [
     {
+      title: "Bookshelf",
+      image:"https://res.cloudinary.com/dbhsefgs0/image/upload/v1739895109/bookshelf_k1de5p.png",
+      description:
+        "Find book reviews at one place. This project is built with Node.js, Express, and MongoDB, featuring Cloudinary for image uploads and JWT-based authentication. Frontend built using React along with shadcn , tailwindcss.",
+      repo : "https://github.com/mokshanirugutti/bookshelf",
+      live : "https://theboookshelf.netlify.app/",
+    },
+    {
       title: "Dictionary Book",
-      image:"/dictionaryBook.webp",
+      image:"https://res.cloudinary.com/dbhsefgs0/image/upload/v1739895768/Screenshot_2025-02-18_215225_snlghe.png",
       description:'A web application that allows users to search for words and get their definitions and examples. It also stores the search history. OTP based user authentication.',
       repo: "https://github.com/mokshanirugutti/dictionary_book",
       live: "https://dictionary-book-store.netlify.app/"
@@ -35,7 +43,7 @@ export default function AllProjects() {
       "A WebApp built using React,TypeScript,Firebase to store the data of students. With dashboard for managing the data.",
       repo : "https://github.com/mokshanirugutti/studentBase",
       live : "https://studentbase.netlify.app/",
-      image:"/studentBase.webp"
+      image:"https://res.cloudinary.com/dbhsefgs0/image/upload/v1739895614/stundebase_xfxxya.png"
 
     },
     {
@@ -43,8 +51,9 @@ export default function AllProjects() {
       description:
         "A custom built chorme extension that will track streaks for Leetcode, Github, highlights today contribution so that you can keep track of your progress.",
       repo : "https://github.com/mokshanirugutti/streakStation",
-      image:"/streakStation.webp"
+      image:"https://res.cloudinary.com/dbhsefgs0/image/upload/v1739895817/Screenshot_216_uidpci.png"
     },
+    
 
   ];
 
