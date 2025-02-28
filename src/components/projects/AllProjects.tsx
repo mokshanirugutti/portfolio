@@ -47,6 +47,14 @@ export default function AllProjects() {
 
     },
     {
+      title: "Createathon",
+      description:
+      "Createathon is an interactive learning platform designed to provide coding challenges for users. The backend is built using Django for core logic and FastAPI for high-performance microservices.",
+      repo : "https://github.com/mokshanirugutti/Createathon",
+      image:"https://res.cloudinary.com/dbhsefgs0/image/upload/v1740763146/creataon_ux1asw.png"
+
+    },
+    {
       title: "Streak Station",
       description:
         "A custom built chorme extension that will track streaks for Leetcode, Github, highlights today contribution so that you can keep track of your progress.",
