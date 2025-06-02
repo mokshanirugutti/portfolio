@@ -8,7 +8,6 @@ import {
   Button,
   useDisclosure,
 } from "@heroui/react";
-import Link from "next/link";
 import { IconBrandGithub } from "@tabler/icons-react";
 import { LinkPreview } from "../ui/link-preview";
 
@@ -29,14 +28,14 @@ export default function ProjectCard({ title, techStack, gitLink, liveLink, descr
 
   return (
     <>
-      <div className="border rounded-md px-3 py-2 w-56 hover:translate-y-1 transition duration-150 group hover:bg-black/20 hover:shadow-md">
+      <div className="border rounded-md px-3 py-2 w-56 hover:translate-y-1 transition duration-150 group hover:bg-black/20 hover:shadow-md" onClick={onOpen}>
         <div className="flex gap-1">
         <LinkPreview url={liveLink} className="text-lg font-medium text-white flex gap-1">
           <h1 className="">{title}</h1>
           <div className="relative h-fit overflow-hidden cursor-pointer">
           </div>
+              <ArrowUpRight className="md:translate-y-full group-hover:-translate-y-0 transition-all duration-100 ease-out md:opacity-0 group-hover:opacity-100" />
         </LinkPreview>{" "}
-              <ArrowUpRight className="md:translate-y-full group-hover:-translate-y-0 transition-all duration-100 ease-out md:opacity-0 group-hover:opacity-100" onClick={onOpen}/>
         </div>
         <h1 className="mt-1 font-normal">TechStack</h1>
           <li className="text-sm font-light">{techStack.frontend}</li>
@@ -54,17 +53,17 @@ export default function ProjectCard({ title, techStack, gitLink, liveLink, descr
           </ModalBody>
           <ModalFooter>
             
-              <Link href={gitLink} target="_blank" rel="noopener noreferrer">
-                <Button  variant="light"   className="flex gap-1 text-white items-center justify-center">
+              
+                <Button  variant="light"   className="flex gap-1 text-white items-center justify-center" onClick={() => window.open(gitLink, "_blank")}>
                     <IconBrandGithub/> Repo
                 </Button>
-              </Link>
+              
 
-              <Link href={liveLink} target="_blank" rel="noopener noreferrer" >
-                <Button  className="flex gap-1 text-white items-center justify-center bg-blue-500 hover:bg-blue-600">
+              
+                <Button  className="flex gap-1 text-white items-center justify-center bg-blue-500 hover:bg-blue-600" onClick={() => window.open(liveLink, "_blank")}>
                   <ExternalLink/> Live
                 </Button>
-              </Link>
+              
           </ModalFooter>
         </ModalContent>
       </Modal>
