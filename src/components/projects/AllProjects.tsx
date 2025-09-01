@@ -57,7 +57,7 @@ export default function AllProjects() {
     {
       title: "Streak Station",
       description:
-        "A custom built chorme extension that will track streaks for Leetcode, Github, highlights today contribution so that you can keep track of your progress.",
+        "A custom built chrome extension that will track streaks for Leetcode, Github, highlights today contribution so that you can keep track of your progress.",
       repo : "https://github.com/mokshanirugutti/streakStation",
       image:"https://res.cloudinary.com/dbhsefgs0/image/upload/v1739895817/Screenshot_216_uidpci.png"
     },
